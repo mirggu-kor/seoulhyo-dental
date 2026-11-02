@@ -14,3 +14,9 @@
 
 /* Footer: 흰 배경 없는 흰색 서울대 문장 */
 .footer .logo::before{background-color:transparent;filter:grayscale(1) invert(1) contrast(100);mix-blend-mode:screen}
+
+/* 진료 분야: 모든 카드의 이미지 비율과 표시 영역 통일 */
+.tiles .tile .treatment-photo{height:auto;min-height:0;aspect-ratio:4/3;overflow:hidden;position:relative;background:#f3f3f1}
+.tiles .tile .treatment-photo img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center}
+.tiles .tile .treatment-photo span{display:none}
+.tiles .tile .treatment-photo img[style*="display: none"] + span{display:block;position:absolute;top:50%;left:0;width:100%;transform:translateY(-50%);text-align:center;color:#162d42;font-weight:700}
