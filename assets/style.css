@@ -13,4 +13,4 @@
 @media(max-width:600px){.logo{gap:6px;font-size:22px}.logo::before{flex-basis:34px;width:34px;height:34px}}
 
 /* Footer: 흰 배경 없는 흰색 서울대 문장 */
-.footer .logo::before{background-color:transparent;filter:brightness(0) invert(1);mix-blend-mode:screen}
+.footer .logo::before{background-color:transparent;filter:grayscale(1) invert(1) contrast(100);mix-blend-mode:screen}
