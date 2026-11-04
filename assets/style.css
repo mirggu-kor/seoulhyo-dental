@@ -94,11 +94,14 @@
 @media(max-width:760px){.about-team-photo,.about-team-photo img{min-height:250px}.about-team-photo img{aspect-ratio:16/10}}
 
 
-/* Home hero: single full-image display with subtle breathing animation */
-.hero-single-photo{position:relative;min-width:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#e8e6e1}
-.hero-single-photo img{display:block;width:100%;height:100%;max-height:620px;object-fit:contain;object-position:center;animation:home-hero-breathe 12s ease-in-out infinite alternate;transform-origin:center}
-@keyframes home-hero-breathe{from{transform:scale(.975)}to{transform:scale(1)}}
-@media(prefers-reduced-motion:reduce){.hero-single-photo img{animation:none}}
+/* Home hero: shorter, edge-to-edge photo with subtle motion */
+.hero .hero-inner{min-height:520px}
+.hero .hero-copy{padding-top:75px;padding-bottom:70px}
+.hero .hero-single-photo{height:520px;min-height:0;min-width:0;overflow:hidden;position:relative;display:block;background:transparent}
+.hero .hero-single-photo img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;object-position:center center;animation:home-hero-breathe 12s ease-in-out infinite alternate;transform-origin:center}
+@keyframes home-hero-breathe{from{transform:scale(1)}to{transform:scale(1.025)}}
+@media(max-width:760px){.hero .hero-inner{min-height:0}.hero .hero-copy{padding-top:55px;padding-bottom:45px}.hero .hero-single-photo{height:340px}}
+@media(prefers-reduced-motion:reduce){.hero .hero-single-photo img{animation:none}}
 
 
 
