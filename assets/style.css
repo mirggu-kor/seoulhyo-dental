@@ -23,3 +23,31 @@
 
 /* About: trust and patient stories */
 .trust-section{background:#faf8f5}.trust-title{font-size:clamp(30px,3.2vw,46px);letter-spacing:-.055em;margin:12px 0 34px;color:#211f1e}.trust-title em{font-style:italic;color:#b99b63}.trust-layout{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}.trust-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.trust-stat{min-height:125px;background:#f4f0eb;border:1px solid #e7e0d7;border-radius:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;text-align:center}.trust-stat strong{font-family:Georgia,serif;font-size:32px;line-height:1;color:#202020}.trust-stat strong small{font-family:inherit;font-size:19px}.trust-stat span{font-size:13px;color:#8a796b}.trust-promises{display:grid;gap:10px}.trust-promises>div{display:flex;align-items:center;gap:13px;background:#f4f0eb;border:1px solid #e7e0d7;border-radius:10px;padding:17px 20px;color:#34302d;font-size:15px}.trust-check{display:grid;place-items:center;flex:0 0 25px;height:25px;background:#262626;color:white;border-radius:50%;font-size:13px}.reviews-section{background:#f3efe9}.review-intro{margin:-12px 0 28px;color:#857b71;font-size:14px}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.review-card{background:#fff;border-radius:12px;padding:26px 24px;min-height:190px}.review-placeholder{font-weight:700;color:#b99b63;font-size:15px;margin-bottom:18px}.review-card p{color:#555;line-height:1.8;font-size:14px}.review-card span{display:block;color:#9a9188;font-size:12px;margin-top:18px}@media(max-width:760px){.trust-layout{grid-template-columns:1fr}.review-grid{grid-template-columns:1fr}.trust-stat{min-height:105px}.trust-promises>div{font-size:14px;padding:15px}}
+
+/* About reference composition: spacious full-width two-column trust panel and three review cards */
+.trust-section,.reviews-section{padding:64px 0 72px}
+.trust-section .wrap,.reviews-section .wrap{width:min(1500px,calc(100% - 48px))}
+.trust-section{background:#faf9f7}
+.trust-section .eyebrow{font-size:11px;letter-spacing:.06em;color:#b89960;margin-bottom:6px}
+.trust-section .trust-title,.reviews-section .trust-title{font-size:clamp(30px,2.8vw,42px);line-height:1.25;margin:0 0 38px;color:#24211e}
+.trust-title em{color:#b79960;font-style:italic;font-weight:700}
+.trust-layout{grid-template-columns:1fr 1fr;gap:28px}
+.trust-stats{gap:12px}
+.trust-stat{height:120px;min-height:0;border:1px solid #e7e0d7;background:#f5f2ed;border-radius:12px;gap:6px}
+.trust-stat strong{font-size:38px;letter-spacing:-.06em;font-weight:700;color:#1f1d1c}
+.trust-stat strong small{font-size:21px;font-weight:400}
+.trust-stat span{font-size:12px;color:#a4978b}
+.trust-promises{gap:10px}
+.trust-promises>div{min-height:68px;background:#f5f2ed;border-color:#e7e0d7;padding:15px 22px;border-radius:11px;font-size:14px}
+.trust-check{background:#222;color:#fff;width:28px;height:28px;flex-basis:28px}
+.reviews-section{background:#f4f0ea}
+.reviews-section .eyebrow{display:inline-block;background:#03bf5b;color:white;border-radius:99px;padding:5px 11px;letter-spacing:0;font-size:11px;margin-bottom:12px}
+.reviews-section .trust-title{margin-bottom:16px}
+.reviews-section .review-intro{margin:0 0 32px;font-size:13px;color:#82786f}
+.review-grid{gap:16px}
+.review-card{border:1px solid #eeeae5;border-radius:12px;min-height:190px;padding:30px 27px;box-shadow:none}
+.review-card .review-placeholder{color:#c19a56;font-size:15px;margin-bottom:18px}
+.review-card p{font-size:14px;line-height:1.85;color:#615b55}
+.review-card span{font-size:12px;color:#a3978c}
+@media(min-width:1100px){.trust-section .wrap,.reviews-section .wrap{width:calc(100% - 64px);max-width:1600px}}
+@media(max-width:760px){.trust-section,.reviews-section{padding:50px 0 56px}.trust-section .wrap,.reviews-section .wrap{width:calc(100% - 32px)}.trust-layout{grid-template-columns:1fr;gap:20px}.trust-stats{gap:10px}.trust-stat{height:104px}.trust-stat strong{font-size:30px}.trust-promises>div{min-height:58px}.review-grid{grid-template-columns:1fr}.review-card{min-height:150px;padding:24px}}
