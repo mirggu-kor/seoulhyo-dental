@@ -142,3 +142,9 @@
 .ortho-age-grid .principle:last-child{padding-right:0}
 @media(max-width:900px){.ortho-age-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ortho-age-grid .principle{padding:28px 20px}.ortho-age-grid .principle:nth-child(2){border-right:0}.ortho-age-grid .principle:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:520px){.ortho-age-grid{grid-template-columns:1fr}.ortho-age-grid .principle{padding:24px 0;border-right:0;border-bottom:1px solid var(--line)}.ortho-age-grid .principle:last-child{border-bottom:0}}
+
+/* Orthodontic before/after image pairs */
+.ortho-case-photo{margin:0;min-width:0;background:#eef1f2;position:relative;display:flex;flex-direction:column}
+.ortho-case-photo img{display:block;width:100%;height:270px;object-fit:contain;background:#eef1f2}
+.ortho-case-photo figcaption{padding:10px 12px;text-align:center;font-size:12px;letter-spacing:.15em;font-weight:700;color:var(--navy);background:#f7f8f8}
+@media(max-width:600px){.ortho-case-photo img{height:180px}}
