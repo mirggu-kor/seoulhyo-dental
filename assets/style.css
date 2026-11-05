@@ -134,3 +134,11 @@
 .ortho-case-copy p{margin:0;line-height:1.7;color:#667783}
 .ortho-case-note{font-size:13px;color:#74818b;line-height:1.8;margin-top:18px}
 @media(max-width:600px){.ortho-case-placeholder{min-height:170px;padding:12px}.ortho-case-placeholder strong{font-size:12px}.ortho-case-copy{padding:20px}}
+
+/* Four matching age-group cards on orthodontics page */
+.ortho-age-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ortho-age-grid .principle{padding:36px 22px}
+.ortho-age-grid .principle:first-child{padding-left:0}
+.ortho-age-grid .principle:last-child{padding-right:0}
+@media(max-width:900px){.ortho-age-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ortho-age-grid .principle{padding:28px 20px}.ortho-age-grid .principle:nth-child(2){border-right:0}.ortho-age-grid .principle:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:520px){.ortho-age-grid{grid-template-columns:1fr}.ortho-age-grid .principle{padding:24px 0;border-right:0;border-bottom:1px solid var(--line)}.ortho-age-grid .principle:last-child{border-bottom:0}}
