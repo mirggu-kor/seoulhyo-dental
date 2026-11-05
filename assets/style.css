@@ -117,3 +117,20 @@
 .doctor-grid .doctor-photo img{max-width:100%;max-height:100%;object-fit:contain;object-position:center bottom}
 .doctor-grid .doctor-photo-kim img{width:84%!important;height:94%!important;object-position:center bottom!important;mix-blend-mode:multiply;-webkit-mask-image:radial-gradient(ellipse 78% 83% at 50% 52%,#000 73%,transparent 100%);mask-image:radial-gradient(ellipse 78% 83% at 50% 52%,#000 73%,transparent 100%)}
 .doctor-grid .doctor-photo-mok img{mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent)}
+
+
+/* Orthodontics: age-specific care and treatment case slots */
+.ortho-senior{margin-top:24px;padding:25px 30px;border:1px solid var(--line);background:#fff}
+.ortho-senior strong{display:block;color:var(--navy);margin-bottom:10px}
+.ortho-senior p{margin:0;line-height:1.85;color:#596b76}
+.ortho-cases{display:grid;gap:30px}
+.ortho-case{border:1px solid var(--line);background:#fff;overflow:hidden}
+.ortho-case-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--line)}
+.ortho-case-placeholder{min-height:245px;padding:22px;background:#eef1f2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;color:#667783}
+.ortho-case-placeholder span{font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--navy)}
+.ortho-case-placeholder strong{font-size:15px;font-weight:500}
+.ortho-case-copy{padding:24px 28px}
+.ortho-case-copy h3{margin:0 0 8px;color:var(--navy)}
+.ortho-case-copy p{margin:0;line-height:1.7;color:#667783}
+.ortho-case-note{font-size:13px;color:#74818b;line-height:1.8;margin-top:18px}
+@media(max-width:600px){.ortho-case-placeholder{min-height:170px;padding:12px}.ortho-case-placeholder strong{font-size:12px}.ortho-case-copy{padding:20px}}
