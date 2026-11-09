@@ -148,3 +148,29 @@
 .ortho-case-photo img{display:block;width:100%;height:270px;object-fit:contain;background:#eef1f2}
 .ortho-case-photo figcaption{padding:10px 12px;text-align:center;font-size:12px;letter-spacing:.15em;font-weight:700;color:var(--navy);background:#f7f8f8}
 @media(max-width:600px){.ortho-case-photo img{height:180px}}
+
+
+/* Advanced implant landing page */
+.implant-hero{background:linear-gradient(125deg,#142c41 0%,#25455a 100%);color:#fff}
+.implant-hero .crumb,.implant-hero .eyebrow{color:#d9c7a8}
+.implant-hero .page-title,.implant-hero p{color:#fff}
+.implant-hero p{max-width:790px;opacity:.88;line-height:1.9}
+.implant-complex-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.implant-complex-card{background:#f7f8f8;border:1px solid var(--line);padding:34px;display:flex;flex-direction:column;min-height:275px}
+.implant-complex-no{font-size:12px;letter-spacing:.13em;color:#a48c68;font-weight:700}
+.implant-complex-card h3{font-size:24px;color:var(--navy);margin:21px 0 13px;letter-spacing:-.04em}
+.implant-complex-card p{color:#667783;line-height:1.9;font-size:15px;margin:0 0 18px}
+.implant-complex-card span{margin-top:auto;font-size:13px;color:#8a7454}
+.implant-statement{padding:55px 60px;background:#173349;color:#fff}
+.implant-statement .eyebrow{color:#d9c7a8}
+.implant-statement h2{font-size:clamp(28px,3.3vw,44px);line-height:1.4;letter-spacing:-.05em;margin:17px 0}
+.implant-statement p{max-width:780px;line-height:2;color:#e0e8ed}
+.implant-case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.implant-case{border:1px solid var(--line);background:#fff}
+.implant-case-visual{aspect-ratio:4/3;background:linear-gradient(145deg,#e9eef0,#dce3e5);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;padding:20px;text-align:center;color:var(--navy)}
+.implant-case-visual span{font-size:12px;letter-spacing:.16em;color:#a48c68;font-weight:700}
+.implant-case-visual strong{font-size:17px;line-height:1.5}
+.implant-case-visual small{font-size:12px;color:#7b8b94}
+.implant-case h3{padding:22px 22px 0;margin:0;color:var(--navy);font-size:20px}
+.implant-case p{padding:0 22px 24px;color:#687781;line-height:1.8;font-size:14px}
+@media(max-width:760px){.implant-complex-grid,.implant-case-grid{grid-template-columns:1fr}.implant-complex-card{min-height:0;padding:27px}.implant-statement{padding:34px 25px}.implant-case-visual{aspect-ratio:16/9}}
