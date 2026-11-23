@@ -3,7 +3,28 @@
   <head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="#162d42" name="theme-color"/><meta content="서울효치과 고난도 임플란트 진료 안내. 잇몸뼈 부족, 임플란트 재치료, 다수 치아 회복 등 복잡한 조건에서 진단부터 보철과 유지관리까지 고려합니다." name="description"/><title>고난도 임플란트·재치료 | 서울효치과</title><link href="assets/style.css" rel="stylesheet"/>
     <script defer="" src="assets/site.js">
     </script>
-  </head>
+  <style>
+.implant-case-trigger{display:block;width:100%;padding:0;border:0;background:#fff;text-align:left;cursor:pointer;font:inherit;color:inherit}
+.implant-case-trigger:focus-visible{outline:3px solid #b28c51;outline-offset:3px}
+.implant-case-thumb{display:block;position:relative;aspect-ratio:4/3;overflow:hidden;background:#e9eef0}
+.implant-case-thumb img{width:100%;height:100%;display:block;object-fit:contain;transition:transform .25s ease}
+.implant-case-trigger:hover .implant-case-thumb img{transform:scale(1.035)}
+.implant-case-number{position:absolute;top:12px;left:12px;background:rgba(18,44,65,.88);color:#fff;padding:7px 11px;font-size:12px;letter-spacing:.1em}
+.implant-case-overlay{position:absolute;bottom:0;left:0;right:0;background:rgba(18,44,65,.87);color:#fff;padding:12px 15px;font-size:13px}
+.implant-case-title{display:block;padding:19px 18px 22px;color:#173349;font-size:18px;font-weight:700;line-height:1.55;min-height:90px}
+.implant-gallery[hidden]{display:none}
+.implant-gallery{position:fixed;inset:0;z-index:10000;background:rgba(8,20,30,.93);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;color:#fff}
+.implant-gallery-top{width:min(1050px,100%);display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.implant-gallery-top h3{margin:0;color:#fff;font-size:clamp(17px,2.5vw,23px);line-height:1.4}
+.implant-gallery button{cursor:pointer;border:1px solid rgba(255,255,255,.45);border-radius:3px;background:rgba(255,255,255,.1);color:#fff;padding:10px 15px;font-size:17px}
+.implant-gallery button:focus-visible{outline:3px solid #e4c88d}
+.implant-gallery-stage{width:min(1050px,100%);display:flex;align-items:center;justify-content:center;gap:12px;min-height:0}
+.implant-gallery-stage img{display:block;max-width:calc(100% - 110px);max-height:70vh;object-fit:contain;background:#fff}
+.implant-gallery-meta{margin-top:14px;text-align:center;line-height:1.8;color:#e8edf1}
+.implant-gallery-meta strong{color:#fff}
+@media(max-width:760px){.implant-case-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.implant-case-thumb{aspect-ratio:4/3}.implant-case-title{font-size:14px;min-height:86px;padding:12px}.implant-case-overlay{font-size:11px;padding:8px}.implant-gallery{padding:12px}.implant-gallery-stage{gap:5px}.implant-gallery-stage img{max-width:calc(100% - 80px);max-height:67vh}.implant-gallery button{padding:8px 10px}}
+@media(max-width:390px){.implant-case-grid{grid-template-columns:1fr}}
+</style></head>
   <body>
     <div class="utility">
       <div class="wrap"><span>SEOUL HYO DENTAL CLINIC · 정릉동 서울효치과</span><span>정확한 진단 · 충분한 설명 · 책임 있는 진료</span>
@@ -67,17 +88,45 @@
           <div class="section-head">
             <div class="eyebrow">CLINICAL CASES</div>
             <h2>치료 사례로 살펴보는<br/>복잡한 임플란트 진료</h2>
-            <p class="desc">실제 진료 사례 사진과 영상 자료를 추후 등록할 공간입니다.</p>
+            <p class="desc">각 사례를 선택하면 치료 전·중·후 사진을 자세히 확인하실 수 있습니다.</p>
           </div>
           <div class="implant-case-grid">
-            <article class="implant-case"><div class="implant-case-visual"><span>CASE 01</span><strong>잇몸뼈 부족 · 골이식 관련 사례</strong><small>진료 사진 등록 예정</small></div><h3>뼈가 부족한 경우</h3></article>
-            <article class="implant-case"><div class="implant-case-visual"><span>CASE 02</span><strong>임플란트 재치료 사례</strong><small>진료 사진 등록 예정</small></div><h3>재수술·재식립 검토</h3></article>
-            <article class="implant-case"><div class="implant-case-visual"><span>CASE 03</span><strong>다수 임플란트 · 전악 회복 사례</strong><small>진료 사진 등록 예정</small></div><h3>복합 보철 회복</h3></article>
+            <article class="implant-case"><button type="button" class="implant-case-trigger" data-case="0" aria-label="상악동 골이식을 동반한 임플란트 사진 2장 보기"><span class="implant-case-thumb"><img src="assets/images/implant-cases/case-sinus-before.jpg" alt="상악동 골이식을 동반한 임플란트 대표 사진" loading="lazy"/><span class="implant-case-number">CASE 01</span><span class="implant-case-overlay">사진 2장 보기 ↗</span></span><span class="implant-case-title">상악동 골이식을 동반한 임플란트</span></button></article>
+            <article class="implant-case"><button type="button" class="implant-case-trigger" data-case="1" aria-label="임플란트 보철 파절 및 재치료 사진 4장 보기"><span class="implant-case-thumb"><img src="assets/images/implant-cases/case-regeneration-intraoral-before.jpg" alt="임플란트 보철 파절 및 재치료 대표 사진" loading="lazy"/><span class="implant-case-number">CASE 02</span><span class="implant-case-overlay">사진 4장 보기 ↗</span></span><span class="implant-case-title">임플란트 보철 파절 및 재치료</span></button></article>
+            <article class="implant-case"><button type="button" class="implant-case-trigger" data-case="2" aria-label="전치부 심미 임플란트 사진 6장 보기"><span class="implant-case-thumb"><img src="assets/images/implant-cases/case-anterior-before-front.jpg" alt="전치부 심미 임플란트 대표 사진" loading="lazy"/><span class="implant-case-number">CASE 03</span><span class="implant-case-overlay">사진 6장 보기 ↗</span></span><span class="implant-case-title">전치부 심미 임플란트</span></button></article>
+            <article class="implant-case"><button type="button" class="implant-case-trigger" data-case="3" aria-label="다수 임플란트를 이용한 광범위 보철 회복 사진 2장 보기"><span class="implant-case-thumb"><img src="assets/images/implant-cases/case-fullarch-before.jpg" alt="다수 임플란트를 이용한 광범위 보철 회복 대표 사진" loading="lazy"/><span class="implant-case-number">CASE 04</span><span class="implant-case-overlay">사진 2장 보기 ↗</span></span><span class="implant-case-title">다수 임플란트를 이용한 광범위 보철 회복</span></button></article>
+            <article class="implant-case"><button type="button" class="implant-case-trigger" data-case="4" aria-label="기존 임플란트 문제로 인한 재식립 사진 3장 보기"><span class="implant-case-thumb"><img src="assets/images/implant-cases/case-reimplant-before.jpg" alt="기존 임플란트 문제로 인한 재식립 대표 사진" loading="lazy"/><span class="implant-case-number">CASE 05</span><span class="implant-case-overlay">사진 3장 보기 ↗</span></span><span class="implant-case-title">기존 임플란트 문제로 인한 재식립</span></button></article>
+            <article class="implant-case"><button type="button" class="implant-case-trigger" data-case="5" aria-label="기존 임플란트 제거 및 재식립 사진 2장 보기"><span class="implant-case-thumb"><img src="assets/images/implant-cases/case-revision-before.jpg" alt="기존 임플란트 제거 및 재식립 대표 사진" loading="lazy"/><span class="implant-case-number">CASE 06</span><span class="implant-case-overlay">사진 2장 보기 ↗</span></span><span class="implant-case-title">기존 임플란트 제거 및 재식립</span></button></article>
           </div>
-          <p class="ortho-case-note">※ 치료 가능 여부와 결과는 개인의 구강 상태, 전신 건강 및 치료 조건에 따라 달라집니다. 실제 사례 공개 시 환자 동의와 의료광고 관련 기준을 확인합니다.</p>
+          <p class="ortho-case-note">※ 사진은 개별 치료 사례이며 치료 결과는 환자의 구강 상태, 전신 건강 및 치료 조건에 따라 달라질 수 있습니다.</p>
         </div>
       </section>
     </main>
+<div class="implant-gallery" id="implantGallery" role="dialog" aria-modal="true" aria-label="임플란트 치료 사례 사진" hidden>
+  <div class="implant-gallery-top"><h3 id="implantGalleryTitle"></h3><button type="button" id="implantGalleryClose" aria-label="사진 닫기">✕ 닫기</button></div>
+  <div class="implant-gallery-stage"><button type="button" id="implantGalleryPrev" aria-label="이전 사진">❮</button><img id="implantGalleryImage" alt=""/><button type="button" id="implantGalleryNext" aria-label="다음 사진">❯</button></div>
+  <div class="implant-gallery-meta"><strong id="implantGalleryLabel"></strong><div id="implantGalleryCount"></div></div>
+</div>
+<script>
+(()=>{
+  const cases=[{"title":"상악동 골이식을 동반한 임플란트","files":[["case-sinus-before.jpg","치료 전"],["case-sinus-after.jpg","치료 후"]]},{"title":"임플란트 보철 파절 및 재치료","files":[["case-regeneration-intraoral-before.jpg","치료 전 구강사진"],["case-regeneration-before.jpg","치료 전 방사선사진"],["case-regeneration-fracture.jpg","파절 상태"],["case-regeneration-after.jpg","치료 후"]]},{"title":"전치부 심미 임플란트","files":[["case-anterior-before-front.jpg","치료 전 · 정면"],["case-anterior-before-occlusal.jpg","치료 전 · 교합면"],["case-anterior-during-front.jpg","치료 중 · 정면"],["case-anterior-during-occlusal.jpg","치료 중 · 교합면"],["case-anterior-after-front.jpg","치료 후 · 정면"],["case-anterior-after-occlusal.jpg","치료 후 · 교합면"]]},{"title":"다수 임플란트를 이용한 광범위 보철 회복","files":[["case-fullarch-before.jpg","치료 전"],["case-fullarch-after.jpg","치료 후"]]},{"title":"기존 임플란트 문제로 인한 재식립","files":[["case-reimplant-before.jpg","치료 전"],["case-reimplant-during.jpg","치료 중"],["case-reimplant-after.jpg","치료 후"]]},{"title":"기존 임플란트 제거 및 재식립","files":[["case-revision-before.jpg","치료 전"],["case-revision-after.jpg","치료 후"]]}];
+  const modal=document.getElementById('implantGallery'),photo=document.getElementById('implantGalleryImage');
+  const title=document.getElementById('implantGalleryTitle'),label=document.getElementById('implantGalleryLabel'),count=document.getElementById('implantGalleryCount');
+  const close=document.getElementById('implantGalleryClose');
+  let active=0,index=0,returnFocus=null,startX=null;
+  const render=()=>{const c=cases[active],f=c.files[index];title.textContent=c.title;label.textContent=f[1];count.textContent=(index+1)+' / '+c.files.length;photo.src='assets/images/implant-cases/'+f[0];photo.alt=c.title+' - '+f[1]};
+  const move=delta=>{index=(index+delta+cases[active].files.length)%cases[active].files.length;render()};
+  const hide=()=>{modal.hidden=true;document.body.style.overflow='';photo.removeAttribute('src');returnFocus?.focus()};
+  document.querySelectorAll('.implant-case-trigger').forEach(b=>b.addEventListener('click',()=>{active=Number(b.dataset.case);index=0;returnFocus=b;modal.hidden=false;document.body.style.overflow='hidden';render();close.focus()}));
+  close.addEventListener('click',hide);
+  document.getElementById('implantGalleryPrev').addEventListener('click',()=>move(-1));
+  document.getElementById('implantGalleryNext').addEventListener('click',()=>move(1));
+  modal.addEventListener('click',e=>{if(e.target===modal)hide()});
+  document.addEventListener('keydown',e=>{if(modal.hidden)return;if(e.key==='Escape')hide();else if(e.key==='ArrowLeft')move(-1);else if(e.key==='ArrowRight')move(1);else if(e.key==='Tab'){const focusables=[close,document.getElementById('implantGalleryPrev'),document.getElementById('implantGalleryNext')];const i=focusables.indexOf(document.activeElement);if(e.shiftKey&&i===0){e.preventDefault();focusables[2].focus()}else if(!e.shiftKey&&i===2){e.preventDefault();focusables[0].focus()}}});
+  photo.addEventListener('touchstart',e=>{startX=e.changedTouches[0].screenX},{passive:true});
+  photo.addEventListener('touchend',e=>{if(startX===null)return;const d=e.changedTouches[0].screenX-startX;if(Math.abs(d)>45)move(d<0?1:-1);startX=null},{passive:true});
+})();
+</script>
     <section class="ribbon">
       <div class="wrap">
         <div>
